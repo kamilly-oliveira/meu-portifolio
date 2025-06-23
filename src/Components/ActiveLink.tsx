@@ -8,18 +8,20 @@ type Props = {
   className: string;
 };
 
+export function ActiveLink({
+  to,
+  children,
+  activeClassName,
+  className,
+}: Props) {
+  const match = useMatch(to);
+  console.log(to, match);
 
-export function ActiveLink({to, children, activeClassName, className}: Props) {
-
-    const match = useMatch(to)
-    console.log(to, match)
-
-    return (
-        <Link 
-            to={to}>
-            <span className={`${className} ${match ? activeClassName : ""}`}>
-                {children}
-            </span>
-        </Link>
-    )
+  return (
+    <Link to={to}>
+      <span className={`${className} ${match ? activeClassName : ""}`}>
+        {children}
+      </span>
+    </Link>
+  );
 }
