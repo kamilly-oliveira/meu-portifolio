@@ -5,13 +5,15 @@ import { AboutSection } from "./Components/AboutSection";
 import { ProjectsSection } from "./Components/ProjectsSection";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./Components/Header";
+import { useState } from "react";
 
 export function App() {
+    const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="h-full flex flex-row bg-background">
-      <Sidebar />
+      <Sidebar isOpen={isOpen}/>
       <div className="flex-1">
-        <Header />
+        <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <Routes>
           <Route
             path="/"
