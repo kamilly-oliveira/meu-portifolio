@@ -2,13 +2,14 @@ import { Code, GraduationCap, Heart } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <div className="text-center flex flex-1 flex-col mb-8">
-      <div className="font-serif my-4">
+    <div className="text-center flex flex-1 flex-col h-min">
+      <div className="font-serif my-2">
         <h1 className="text-2xl lg:text-4xl font-bold mb-4 ">
           <span
             className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
         bg-clip-text text-transparent"
-          >Sobre Mim
+          >
+            Sobre Mim
           </span>
         </h1>
       </div>
@@ -23,31 +24,31 @@ export function AboutSection() {
 
             <div className="space-y-4 my-2 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-                Minha trajetória no mundo da tecnologia começou de forma
-                inesperada. Graduanda em
+                Minha curiosidade por tecnologia nasceu ainda na infância, mas
+                foi ao longo da minha formação em
                 <span className="font-semibold text-purple-600 dark:text-purple-400">
                   {" "}
                   Engenharia Elétrica
                 </span>
-                , descobri minha verdadeira paixão ao mergulhar no universo do
-                desenvolvimento web.
+                , que percebi que minha verdadeira vocação não estava apenas nos
+                sistemas físicos, e sim na criação de soluções digitais por meio
+                da programação.
               </p>
               <p>
-                A transição da engenharia para o desenvolvimento foi um dos
-                desafios mais gratificantes da minha carreira. O que começou
-                como curiosidade se transformou em dedicação total, levando-me a
-                descobrir o poder de criar soluções digitais que realmente fazem
-                a diferença.
+                Essa vontade me levou a fazer uma transição de carreira para o
+                desenvolvimento web, onde encontrei um universo de
+                possibilidades. Cada linha de código se tornou uma oportunidade
+                de aprendizado e crescimento.
               </p>
               <p>
-                Atualmente, sou estudante de
+                Hoje, como estudante de
                 <span className="font-semibold text-blue-600 dark:text-blue-400">
                   {" "}
                   Ciência da Computação
                 </span>
-                , onde aprofundo meus conhecimentos teóricos enquanto aplico na
-                prática tudo o que aprendo no desenvolvimento de aplicações
-                robustas e escaláveis.
+                , estou mergulhada no mundo da programação e aplico na prática
+                tudo o que aprendo para construir aplicações eficientes,
+                escaláveis e que realmente façam a diferença.
               </p>
             </div>
           </div>
@@ -59,16 +60,14 @@ export function AboutSection() {
             <p className="text-gray-600 my-2 dark:text-gray-300 leading-relaxed">
               Sou apaixonada por{" "}
               <span className="font-semibold text-green-600 dark:text-green-400">
-                back-end development{" "}
+                back-end{" "}
               </span>
-              e pela arquitetura que sustenta as aplicações modernas. Adoro
-              resolver problemas complexos, otimizar performance e criar APIs
-              que proporcionam experiências fluidas para os usuários.
+              e pela lógica por trás das aplicações. Gosto de resolver problemas complexos, criar APIs bem estruturadas e garantir que tudo funcione com performance e fluidez. Para mim, programar é transformar ideias em soluções reais.
             </p>
           </div>
         </div>
 
-        <div className="lg:sticky lg:top-2 lg:flex lg:flex-col lg:justify-between justify-normal gap-6 mt-2 lg:h-full grid grid-cols-4">
+        <div className="lg:sticky lg:h-min lg:top-3 lg:flex lg:flex-col lg:justify-between justify-normal gap-6 mt-2 grid grid-cols-4">
           <div className="col-span-2 bg-gradient-to-br w-full from-purple-100 to-blue-100 dark:from-purple-500/10 dark:to-blue-500/10 backdrop-blur-sm rounded-2xl p-5 border border-purple-200/50 dark:border-purple-500/20 shadow-sm">
             <div className="text-center">
               <GraduationCap className="w-12 h-12 text-purple-600 dark:text-purple-400 mx-auto mb-3" />

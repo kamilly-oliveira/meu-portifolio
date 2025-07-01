@@ -4,6 +4,7 @@ import { ActiveLink } from "./ActiveLink";
 
 type Props = {
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const classNameP =
@@ -13,12 +14,25 @@ const activeItemClass =
 
 const classSidebar = "fixed lg:data-[state=open]:relative";
 
-export function Sidebar({ isOpen }: Props) {
+export function Sidebar({ isOpen, setIsOpen }: Props) {
+  const buttonClicked = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
+  const handleItemClick = () => {
+  if (window.innerWidth < 1024) {
+    setIsOpen(false);
+  }
+};
+
   return (
-    <div data-state={isOpen ? "open" : "closed"}
-      className={`${classSidebar} rounded-r-lg data-[state=closed]:hidden data-[state=open]:bg-black/40 lg:data-[state=open]:bg-white z-40 data-[state=open]:w-screen data-[state=open]:h-screen lg:data-[state=open]:w-78`}
+    <div
+      onClick={() => setIsOpen(!isOpen)}
+      data-state={isOpen ? "open" : "closed"}
+      className={`${classSidebar} rounded-r-xl lg:data-[state=open]:bg-transparent data-[state=closed]:hidden data-[state=open]:bg-black/40 z-40 data-[state=open]:w-screen data-[state=open]:h-screen lg:data-[state=open]:w-78`}
     >
       <div
+        onClick={buttonClicked}
         data-state={isOpen ? "open" : "closed"}
         className={`${classSidebar} w-78 block data-[state=closed]:hidden z-50`}
       >
@@ -41,27 +55,33 @@ export function Sidebar({ isOpen }: Props) {
           </div>
 
           <div className="mt-8">
-            <ActiveLink
-              to="/"
-              className={classNameP}
-              activeClassName={activeItemClass}
-            >
-              <House /> Início
-            </ActiveLink>
-            <ActiveLink
-              to="/aboutsection"
-              activeClassName={activeItemClass}
-              className={classNameP}
-            >
-              <User /> Sobre
-            </ActiveLink>
-            <ActiveLink
-              to="/projetos"
-              activeClassName={activeItemClass}
-              className={classNameP}
-            >
-              <FolderOpen /> Projetos
-            </ActiveLink>
+            <div onClick={handleItemClick}>
+              <ActiveLink
+                to="/"
+                className={classNameP}
+                activeClassName={activeItemClass}
+              >
+                <House /> Início
+              </ActiveLink>
+            </div>
+            <div onClick={handleItemClick}>
+              <ActiveLink
+                to="/aboutsection"
+                activeClassName={activeItemClass}
+                className={classNameP}
+              >
+                <User /> Sobre
+              </ActiveLink>
+            </div>
+            <div onClick={handleItemClick}>
+              <ActiveLink
+                to="/projetos"
+                activeClassName={activeItemClass}
+                className={classNameP}
+              >
+                <FolderOpen /> Projetos
+              </ActiveLink>
+            </div>
           </div>
         </div>
       </div>
