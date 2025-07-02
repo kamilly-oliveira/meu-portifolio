@@ -29,7 +29,7 @@ export function Sidebar({ isOpen, setIsOpen }: Props) {
     <div
       onClick={() => setIsOpen(!isOpen)}
       data-state={isOpen ? "open" : "closed"}
-      className={`${classSidebar} rounded-r-xl lg:data-[state=open]:bg-transparent data-[state=closed]:hidden data-[state=open]:bg-black/40 z-40 data-[state=open]:w-screen data-[state=open]:h-screen lg:data-[state=open]:w-78`}
+      className={`${classSidebar} lg:data-[state=open]:bg-transparent data-[state=closed]:hidden data-[state=open]:bg-black/40 z-40 data-[state=open]:w-screen data-[state=open]:h-screen lg:data-[state=open]:w-78`}
     >
       <div
         onClick={buttonClicked}

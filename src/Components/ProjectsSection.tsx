@@ -12,7 +12,7 @@ import { CardProjects } from "./CardProjects";
 
 export function ProjectsSection() {
   return (
-    <div className="flex flex-1 flex-col mx-12">
+    <div className="flex flex-1 container mx-auto 2xl:w-300 flex-col">
       <h1
         className="text-3xl my-4 font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
         bg-clip-text text-transparent"

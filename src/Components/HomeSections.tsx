@@ -4,7 +4,7 @@ import { PrincipaisStacks } from "./PrincipaisStacks";
 
 export function HomeSection() {
   return (
-    <div className="text-center flex flex-1 flex-col max-w-full">
+    <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col max-w-full">
       <div className="font-serif my-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-4 ">
           <span className="dark:text-white"> Olá sou a </span>
