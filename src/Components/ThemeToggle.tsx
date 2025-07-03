@@ -25,7 +25,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={handleToggle}
-      className="p-2 cursor-pointer rounded-lg bg-white/10 dark:bg-gray-800/50 hover:bg-white/20 dark:hover:bg-gray-700/50 transition-all duration-300 backdrop-blur-sm"
+      className="p-2 cursor-pointer rounded-lg bg-white/10 dark:bg-gray-800/50 hover:bg-gray-200/50 dark:hover:bg-gray-700/50 transition-all duration-300 backdrop-blur-sm"
     >
       {isDark ? (
         <Sun className="w-5 h-5 text-yellow-400" />
