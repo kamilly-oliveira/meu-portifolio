@@ -9,17 +9,18 @@ import PagePoesia from "../assets/PagePoesia.png";
 import CuriosidadesTecnologia from "../assets/CuriosidadesTecnologia.png";
 import GoogleGlass from "../assets/GoogleGlass.png";
 import { CardProjects } from "./CardProjects";
+import { Bot, Github } from "lucide-react";
 
 export function ProjectsSection() {
   return (
-    <div className="flex flex-1 container mx-auto 2xl:w-300 flex-col">
+    <div className="flex flex-1 container 2xl:mx-auto 2xl:w-300  flex-col">
       <h1
         className="text-3xl my-4 font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
-        bg-clip-text text-transparent"
+        bg-clip-text text-transparent mx-6"
       >
         Projetos
       </h1>
-      <p className="text-gray-600 mb-4 dark:text-gray-300 leading-relaxed">
+      <p className="text-gray-600 mb-4  mx-6 dark:text-gray-300 leading-relaxed">
         Uma seleção dos meus projetos mais recentes
       </p>
       <div className="flex flex-wrap gap-4 justify-around">
@@ -31,6 +32,8 @@ export function ProjectsSection() {
           }
           textBagde={"TailwindCSS React Typescript"}
           url={"https://github.com/kamilly-oliveira"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -41,6 +44,8 @@ export function ProjectsSection() {
           }
           textBagde={"TailwindCSS React Typescript Node.Js Express SupaBase"}
           url={"https://bot-landing-page.pages.dev/"}
+          text={"Plataforma"}
+          item={<Bot />}
         />
 
         <CardProjects
@@ -51,6 +56,8 @@ export function ProjectsSection() {
           }
           textBagde={"HTML CSS Javascript"}
           url={"https://github.com/kamilly-oliveira/ConversorMoedas"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -59,6 +66,8 @@ export function ProjectsSection() {
           descricao={"Portal de Noticias."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/ConversorMoedas"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -67,6 +76,8 @@ export function ProjectsSection() {
           descricao={"Site de Turismo sobre Busan."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Tourist_Site"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -75,6 +86,8 @@ export function ProjectsSection() {
           descricao={"Perfil de Viagens."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Travel_Profile"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -83,6 +96,8 @@ export function ProjectsSection() {
           descricao={"Página de Receitas."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Recipe_Page"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -91,6 +106,8 @@ export function ProjectsSection() {
           descricao={"Página de Poesia."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Projeto-Poesia"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -99,6 +116,8 @@ export function ProjectsSection() {
           descricao={"Página de Curiosidades de Tecnologia."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Projeto-Android"}
+          text={"Código"}
+          item={<Github />}
         />
 
         <CardProjects
@@ -107,6 +126,8 @@ export function ProjectsSection() {
           descricao={"Página sobre o Google Glass."}
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Projeto-Google.Glass"}
+          text={"Código"}
+          item={<Github />}
         />
       </div>
     </div>
