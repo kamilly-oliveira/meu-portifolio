@@ -41,7 +41,8 @@ export function CardProjects({
         </div>
         <div className="">
         <a href={url} target="_blank">
-          <button className="flex flex-row rounded-xl cursor-pointer dark:text-gray-400 bg-gray-200 p-3 gap-2 dark:bg-gray-700/20">
+          <button className="flex flex-row rounded-xl cursor-pointer p-3 gap-2 
+          bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-500/20 dark:to-blue-500/20 text-purple-700 dark:text-purple-300 shadow-sm">
             {item}
             {text}
           </button>

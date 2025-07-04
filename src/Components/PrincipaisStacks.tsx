@@ -1,12 +1,12 @@
 import { Focus, MessageCircle, Users } from "lucide-react";
 
 const classNameP =
-  "lg:w-1/2 w-full lg:w-[calc(50%-0.5rem)] text-black dark:text-gray-400 text-left p-2 bg-gray-200 dark:bg-gray-700/20 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700/30 shadow-sm hover:shadow-md";
+  "lg:w-1/2 w-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 hover:bg-purple-100/80 dark:hover:bg-purple-900/80 lg:w-[calc(50%-0.5rem)] text-black dark:text-gray-400 text-left p-2 rounded-lg  shadow-sm hover:shadow-md";
 
 export function PrincipaisStacks() {
   return (
     <div className="flex flex-row w-full justify-around my-3">
-      <div className="p-5 lg:m-6 m-4 border border-gray-200/50 dark:border-gray-700/50 shadow-sm rounded-xl lg:w-100 flex-1">
+      <div className="p-5 lg:m-4 m-2 border border-gray-200/50 dark:border-gray-700/50 shadow-sm rounded-xl lg:w-100 flex-1">
         <h2 className="lg:text-3xl font-bold text-left mb-3 dark:text-white">
           Principais Stacks
         </h2>
@@ -21,7 +21,7 @@ export function PrincipaisStacks() {
         </div>
       </div>
 
-      <div className="p-5 lg:m-6 m-4 border border-gray-200/50 dark:border-gray-700/50 shadow-sm w-fit rounded-xl flex-1">
+      <div className="p-5 lg:m-4 m-2 border border-gray-200/50 dark:border-gray-700/50 shadow-sm w-fit rounded-xl flex-1">
         <h2 className="lg:text-3xl font-bold text-left mb-3 dark:text-white">
           Soft Skills
         </h2>

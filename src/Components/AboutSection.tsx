@@ -3,7 +3,7 @@ import { Code, GraduationCap, Heart } from "lucide-react";
 export function AboutSection() {
   return (
     <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col h-min">
-      <div className="font-serif my-2">
+      <div className="my-2">
         <h1 className="text-2xl lg:text-4xl font-bold mb-4 ">
           <span
             className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
