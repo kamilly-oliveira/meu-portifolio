@@ -1,6 +1,7 @@
 import { FolderOpen, House, User } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { ActiveLink } from "./ActiveLink";
+import { Header } from "./Header";
 
 type Props = {
   isOpen: boolean;
@@ -10,7 +11,7 @@ type Props = {
 const classNameP =
   "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700/50 text-xl gap-2 cursor-pointer my-3 w-full flex items-center px-4 py-3 rounded-lg transition-all ";
 const activeItemClass =
-  "bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-500/20 dark:to-blue-500/20 text-purple-700 dark:text-purple-300 shadow-sm";
+  "bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-500/20 dark:to-blue-500/20 text-purple-700 dark:text-purple-300 shadow-xs";
 
 const classSidebar = "fixed lg:data-[state=open]:relative";
 
@@ -36,7 +37,7 @@ export function Sidebar({ isOpen, setIsOpen }: Props) {
         data-state={isOpen ? "open" : "closed"}
         className={`${classSidebar} w-78 block data-[state=closed]:hidden z-50`}
       >
-        <div className="fixed w-78 h-screen transition-all duration-300 p-5 shadow-2xl rounded-r-lg bg-white dark:bg-background">
+        <div className="fixed w-78 h-screen transition-all duration-300 p-5 shadow-lg rounded-r-lg bg-white dark:bg-background">
           <div>
             <div className="flex flex-row justify-between items-center">
               <h2
@@ -45,14 +46,17 @@ export function Sidebar({ isOpen, setIsOpen }: Props) {
               >
                 Kamilly
               </h2>
-              <div>
-                <ThemeToggle />
-              </div>
+              <div> <Header 
+              text="" 
+              isOpen={isOpen} setIsOpen={setIsOpen} /></div>
+              
             </div>
             <p className="pt-3 text-sm text-gray-400 dark:text-gray-400">
               Desenvolvedora Web
             </p>
           </div>
+        
+        <div className="static">
 
           <div className="mt-8">
             <div onClick={handleItemClick}>
@@ -83,6 +87,12 @@ export function Sidebar({ isOpen, setIsOpen }: Props) {
               </ActiveLink>
             </div>
           </div>
+
+              <div className="p-2 absolute bottom-3 right-3">
+                <ThemeToggle />
+              </div>
+
+              </div>
         </div>
       </div>
     </div>

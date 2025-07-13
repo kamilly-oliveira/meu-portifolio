@@ -13,17 +13,17 @@ import { Bot, Github } from "lucide-react";
 
 export function ProjectsSection() {
   return (
-    <div className="flex flex-1 container 2xl:mx-auto 2xl:w-300  flex-col">
+    <div className="flex flex-1 container 2xl:mx-auto 2xl:w-300 mx-auto flex-col">
       <h1
-        className="text-3xl my-4 font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
+        className="text-3xl my-4 mt-6 font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
         bg-clip-text text-transparent mx-6"
       >
         Projetos
       </h1>
-      <p className="text-gray-600 mb-4  mx-6 dark:text-gray-300 leading-relaxed">
+      <p className="text-gray-600 mb-2  mx-6 dark:text-gray-300 leading-relaxed">
         Uma seleção dos meus projetos mais recentes
       </p>
-      <div className="flex flex-wrap gap-4 justify-around">
+      <div className="flex flex-wrap gap-2 justify-around">
         <CardProjects
           link={PortifolioImage}
           titulo={"Portifolio"}

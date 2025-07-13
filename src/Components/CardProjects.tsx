@@ -22,13 +22,13 @@ export function CardProjects({
   const arrayBagde = textBagde.split(" ");
 
   return (
-    <div className="shadow-sm rounded-xl w-84 my-4  hover:scale-105 transition-all duration-300 ">
+    <div className="shadow-sm rounded-xl w-86 my-4 hover:scale-105 transition-all duration-300 ">
       <img src={link} className="rounded-t-xl w-full h-42 object-cover" />
       <div className="px-6 pt-3">
         <h1 className="text-2xl  dark:text-white font-semibold">
           {titulo}
         </h1>
-        <p className=" text-gray-600 mb-4 dark:text-gray-300 leading-relaxed">
+        <p className=" text-gray-600 dark:text-gray-300 h-22 leading-relaxed">
           {descricao}
         </p></div>
 
