@@ -2,7 +2,7 @@ import { Code, GraduationCap, Heart } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col h-min sm:mb-0 mb-8">
+    <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col h-fit">
       <div className="mb-6 mt-8">
           <span
             className="text-xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
@@ -12,7 +12,7 @@ export function AboutSection() {
           </span>
       </div>
 
-      <div className="flex lg:flex-row flex-col mx-6 text-justify lg:gap-6">
+      <div className="flex lg:flex-row flex-col mx-6 text-justify lg:gap-6 mb-6">
         <div className="flex flex-col flex-2 justify-between">
           <div className="p-5 mb-2 mt-2 border border-gray-200/50 dark:border-gray-700/50 shadow-sm rounded-xl">
             <h3 className="text-xl my-2 font-bold text-left mb-2 dark:text-white flex flex-row items-center">
@@ -65,8 +65,8 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="lg:sticky lg:h-min lg:top-3 lg:flex lg:flex-col lg:justify-between justify-normal sm:gap-10 gap-4 sm:mt-2 mt-0 sm:grid sm:grid-cols-4 flex flex-col sm:h-screen h-fit">
-          <div className="col-span-2 lg:h-56 bg-gradient-to-br w-full from-purple-100 to-blue-100 dark:from-purple-500/10 dark:to-blue-500/10 backdrop-blur-sm rounded-2xl p-5 border border-purple-200/50 dark:border-purple-500/20 shadow-sm">
+        <div className="lg:sticky lg:h-min lg:top-3 lg:flex lg:flex-col lg:justify-between justify-normal sm:gap-x-5 sm:gap-y-3 gap-4 sm:mt-2 mt-0 sm:grid sm:grid-cols-4 flex flex-col h-fit">
+          <div className="col-span-2 sm:h-56 bg-gradient-to-br w-full from-purple-100 to-blue-100 dark:from-purple-500/10 dark:to-blue-500/10 backdrop-blur-sm rounded-2xl p-5 border border-purple-200/50 dark:border-purple-500/20 shadow-sm">
             <div className="text-center">
               <GraduationCap className="w-12 h-12 text-purple-600 dark:text-purple-400 mx-auto mb-3" />
               <h3 className="text-xl font-semibold mb-6 text-gray-800 dark:text-white">
@@ -85,12 +85,13 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br w-full col-span-2 lg:h-42">
-            <div className="bg-white/70 p-5 h-full  dark:bg-gray-800/20 backdrop-blur-sm rounded-2xl border border-gray-200/50 dark:border-gray-700/50 shadow-sm">
-              <h3 className="text-lg font-semibold mb-5 my-2 text-gray-800 dark:text-white text-center">
+          <div className="bg-gradient-to-br w-full col-span-2 sm:h-56 ">
+            <div className="bg-white/70 p-5 h-full dark:bg-gray-800/20 backdrop-blur-sm rounded-2xl border border-gray-200/50 dark:border-gray-700/50 shadow-sm">
+             <div className="text-center my-10">
+              <h3 className="text-lg font-semibold mb-5 my-2 text-gray-800 dark:text-white">
                 Estatísticas
               </h3>
-              <div className="gap-4 text-center flex flex-row justify-around">
+              <div className="gap-4  flex flex-row justify-around">
                 <div>
                   <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">
                     10
@@ -107,11 +108,12 @@ export function AboutSection() {
                     Anos
                   </p>
                 </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="lg:mb-4 lg:w-64 p-5 md:col-start-4 col-span-full bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-500/10 border-purple-200/50 dark:border-purple-500/20  dark:to-blue-500/10 text-gray-800 dark:text-gray-100 backdrop-blur-sm rounded-lg shadow-sm text-sm font-medium italic ">
+          <div className="sm:mb-4  lg:w-64 p-5 md:col-start-4 col-span-full sm:h-26 bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-500/10 border-purple-200/50 dark:border-purple-500/20  dark:to-blue-500/10 text-gray-800 dark:text-gray-100 backdrop-blur-sm rounded-lg shadow-sm text-sm font-medium italic ">
             <span>✨ Não é magia, é só muita linha de código e café.</span>
           </div>
         </div>

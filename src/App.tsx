@@ -10,12 +10,12 @@ import { Header } from "./Components/Header";
 export function App() {
     const [isOpen, setIsOpen] = useState(true);
   return (
-    <div className="h-full flex flex-row bg-background font-display">
+    <div className="w-full flex flex-row bg-background font-display">
 
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
         <Header 
         isOpen={isOpen} setIsOpen={setIsOpen}
-        text="data-[state=open]:hidden sm:data-[state=closed]:p-5 data-[state=closed]:py-5 data-[state=closed]:px-1 absolute top-0 left-0"/>
+        text="data-[state=open]:hidden data-[state=closed]:py-5 absolute top-0 left-0"/>
       <div className="flex-1">
         
         <Routes>

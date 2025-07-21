@@ -9,7 +9,7 @@ type Props = {
 };
 
 const classNameP =
-  "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700/50 text-xl gap-2 cursor-pointer my-3 w-full flex items-center px-4 py-3 rounded-lg transition-all ";
+  "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700/50 text-xl gap-2 cursor-pointer my-3 w-full flex items-center px-4 py-3 rounded-lg transition-all";
 const activeItemClass =
   "bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-500/20 dark:to-blue-500/20 text-purple-700 dark:text-purple-300 shadow-xs";
 
@@ -35,7 +35,7 @@ export function Sidebar({ isOpen, setIsOpen }: Props) {
       <div
         onClick={buttonClicked}
         data-state={isOpen ? "open" : "closed"}
-        className={`${classSidebar} sm:w-78 w-full block data-[state=closed]:hidden z-50`}
+        className={`${classSidebar} sm:w-78 w-full h-full block data-[state=closed]:hidden z-50`}
       >
         <div className="fixed sm:w-78 w-full h-screen transition-all duration-300 p-5 shadow-lg rounded-r-lg bg-white dark:bg-background">
           <div>
