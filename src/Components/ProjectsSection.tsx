@@ -11,11 +11,15 @@ import GoogleGlass from "../assets/GoogleGlass.png";
 import { CardProjects } from "./CardProjects";
 import { Bot, Github } from "lucide-react";
 
+
+const classNameItem = "sm:w-7 sm:h-7 w-5 h-5"
+
+
 export function ProjectsSection() {
   return (
-    <div className="flex flex-1 container 2xl:mx-auto 2xl:w-300 mx-auto flex-col">
+    <div className="flex flex-1 container 2xl:mx-auto 2xl:w-300 mx-auto flex-col ">
       <h1
-        className="text-3xl my-4 mt-6 font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
+        className="text-3xl my-4 sm:mt-8 sm:mb-6 mt-16 font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
         bg-clip-text text-transparent mx-6"
       >
         Projetos
@@ -33,7 +37,7 @@ export function ProjectsSection() {
           textBagde={"TailwindCSS React Typescript"}
           url={"https://github.com/kamilly-oliveira"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`}/>}
         />
 
         <CardProjects
@@ -45,7 +49,7 @@ export function ProjectsSection() {
           textBagde={"TailwindCSS React Typescript Node.Js Express SupaBase"}
           url={"https://bot-landing-page.pages.dev/"}
           text={"Plataforma"}
-          item={<Bot />}
+          item={<Bot className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -57,7 +61,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS Javascript"}
           url={"https://github.com/kamilly-oliveira/ConversorMoedas"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -67,7 +71,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/ConversorMoedas"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -77,7 +81,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Tourist_Site"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -87,7 +91,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Travel_Profile"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -97,7 +101,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Recipe_Page"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -107,7 +111,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Projeto-Poesia"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -117,7 +121,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Projeto-Android"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
@@ -127,7 +131,7 @@ export function ProjectsSection() {
           textBagde={"HTML CSS"}
           url={"https://github.com/kamilly-oliveira/Projeto-Google.Glass"}
           text={"Código"}
-          item={<Github />}
+          item={<Github className={`${classNameItem}`} />}
         />
       </div>
     </div>

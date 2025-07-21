@@ -5,12 +5,12 @@ import { PrincipaisStacks } from "./PrincipaisStacks";
 export function HomeSection() {
   return (
     <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col max-w-full">
-      <div className="my-8">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 ">
+      <div className="sm:mt-8 sm:mb-6 mt-14 ">
+        <h1 className="sm:text-3xl text-2xl md:text-4xl font-bold mb-4 ">
           <span className="dark:text-white"> Olá sou a </span>
           <span className="text-blue-600"> Kamilly </span>
         </h1>
-        <p className="font-semibold md:text-2xl text-xl">
+        <p className="font-semibold md:text-2xl sm:text-xl text-lg">
           <span className="dark:text-gray-400"> Desenvolvedora </span>
           <span className="text-fuchsia-500"> Web</span>
         </p>
@@ -40,7 +40,7 @@ export function HomeSection() {
         </a>
       </div>
 
-      <div className="my-8">
+      <div className="sm:my-8 mb-2">
         <Button text={"Baixar Currículo"} />
       </div>
 

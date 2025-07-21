@@ -2,7 +2,7 @@ import { Code, GraduationCap, Heart } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col h-min">
+    <div className="text-center container mx-auto 2xl:w-300 flex flex-1 flex-col h-min sm:mb-0 mb-8">
       <div className="mb-6 mt-8">
           <span
             className="text-xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 
@@ -65,7 +65,7 @@ export function AboutSection() {
           </div>
         </div>
 
-        <div className="lg:sticky lg:h-min lg:top-3 lg:flex lg:flex-col lg:justify-between justify-normal gap-10 mt-2 grid grid-cols-4 h-screen">
+        <div className="lg:sticky lg:h-min lg:top-3 lg:flex lg:flex-col lg:justify-between justify-normal sm:gap-10 gap-4 sm:mt-2 mt-0 sm:grid sm:grid-cols-4 flex flex-col sm:h-screen h-fit">
           <div className="col-span-2 lg:h-56 bg-gradient-to-br w-full from-purple-100 to-blue-100 dark:from-purple-500/10 dark:to-blue-500/10 backdrop-blur-sm rounded-2xl p-5 border border-purple-200/50 dark:border-purple-500/20 shadow-sm">
             <div className="text-center">
               <GraduationCap className="w-12 h-12 text-purple-600 dark:text-purple-400 mx-auto mb-3" />

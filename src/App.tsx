@@ -15,7 +15,7 @@ export function App() {
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
         <Header 
         isOpen={isOpen} setIsOpen={setIsOpen}
-        text="data-[state=open]:hidden data-[state=closed]:p-5"/>
+        text="data-[state=open]:hidden sm:data-[state=closed]:p-5 data-[state=closed]:py-5 data-[state=closed]:px-1 absolute top-0 left-0"/>
       <div className="flex-1">
         
         <Routes>

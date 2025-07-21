@@ -30,14 +30,14 @@ export function Sidebar({ isOpen, setIsOpen }: Props) {
     <div
       onClick={() => setIsOpen(!isOpen)}
       data-state={isOpen ? "open" : "closed"}
-      className={`${classSidebar} lg:data-[state=open]:bg-transparent data-[state=closed]:hidden data-[state=open]:bg-black/40 z-40 data-[state=open]:w-screen data-[state=open]:h-screen lg:data-[state=open]:w-78`}
+      className={`${classSidebar} lg:data-[state=open]:bg-transparent data-[state=closed]:hidden sm:data-[state=open]:bg-black/40 z-40 data-[state=open]:w-screen data-[state=open]:h-screen lg:data-[state=open]:w-78`}
     >
       <div
         onClick={buttonClicked}
         data-state={isOpen ? "open" : "closed"}
-        className={`${classSidebar} w-78 block data-[state=closed]:hidden z-50`}
+        className={`${classSidebar} sm:w-78 w-full block data-[state=closed]:hidden z-50`}
       >
-        <div className="fixed w-78 h-screen transition-all duration-300 p-5 shadow-lg rounded-r-lg bg-white dark:bg-background">
+        <div className="fixed sm:w-78 w-full h-screen transition-all duration-300 p-5 shadow-lg rounded-r-lg bg-white dark:bg-background">
           <div>
             <div className="flex flex-row justify-between items-center">
               <h2
