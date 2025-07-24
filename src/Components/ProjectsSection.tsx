@@ -35,7 +35,7 @@ export function ProjectsSection() {
             "Portfólio pessoal responsivo com tema escuro/claro e animações suaves."
           }
           textBagde={"TailwindCSS React Typescript"}
-          url={"https://github.com/kamilly-oliveira"}
+          url={"https://github.com/kamilly-oliveira/meu-portifolio"}
           text={"Código"}
           item={<Github className={`${classNameItem}`}/>}
         />
