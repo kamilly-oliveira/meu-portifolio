@@ -11,9 +11,7 @@ import GoogleGlass from "../assets/GoogleGlass.png";
 import { CardProjects } from "./CardProjects";
 import { Bot, Github } from "lucide-react";
 
-
-const classNameItem = "sm:w-7 sm:h-7 w-5 h-5"
-
+const classNameItem = "sm:w-7 sm:h-7 w-5 h-5";
 
 export function ProjectsSection() {
   return (
@@ -24,10 +22,10 @@ export function ProjectsSection() {
       >
         Projetos
       </h1>
-      <p className="text-gray-600 mb-2  mx-6 dark:text-gray-300 leading-relaxed">
+      <p className="text-gray-600 mb-2 mx-6 dark:text-gray-300 leading-relaxed">
         Uma seleção dos meus projetos mais recentes
       </p>
-      <div className="flex flex-wrap gap-2 justify-around">
+      <div className="flex flex-wrap gap-2 justify-around mb-4">
         <CardProjects
           link={PortifolioImage}
           titulo={"Portifolio"}
@@ -37,7 +35,7 @@ export function ProjectsSection() {
           textBagde={"TailwindCSS React Typescript"}
           url={"https://github.com/kamilly-oliveira/meu-portifolio"}
           text={"Código"}
-          item={<Github className={`${classNameItem}`}/>}
+          item={<Github className={`${classNameItem}`} />}
         />
 
         <CardProjects
